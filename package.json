@@ -1,11 +1,11 @@
 {
   "name": "pipe-compose-types",
   "description": "Powerful Typescript Types for `pipe` and `compose`",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prepublish": "npm test && npm build",
+    "prepublish": "npm run test && npm run build",
     "test": "echo 0",
     "dev": "tsc -w",
     "build": "tsc"
