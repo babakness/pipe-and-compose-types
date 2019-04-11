@@ -1,6 +1,6 @@
 {
   "name": "pipe-and-compose-types",
-  "description": "Powerful Typescript Types for `pipe` and `compose`",
+  "description": "Powerful Typescript types for `pipe` and `compose`",
   "version": "0.0.10",
   "main": "index.js",
   "license": "MIT",
