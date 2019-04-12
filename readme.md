@@ -2,10 +2,10 @@
 
 This package strictly contains types. The star of this package is a recursive `Pipe` type with surprising utility over parameter overloading. These benefits include
 
-* unlimited
 * parameter name preservation
+* theoritically unlimited functions can be composed (recursive)
 * variadic input for both `Pipe` and `Compose`   
-* friendly messages on error pointing to the problem
+* friendly messages on error, pointing to the problem
 
 It's biggest weakness is still stronger than the parameter overloading approach, namely generics on compose functions are not preserved; however, it will accept them and the resulting type will be `{}`. The overloading approach can actually often fail to compile in those situations.
 
@@ -53,3 +53,5 @@ const result = pipe(
   String
 ) // (first: number, rest: number[]) => string
 ```
+
+Read more at https://dev.to/babak/introducing-the-recursive-pipe-and-compose-types-3g9o
