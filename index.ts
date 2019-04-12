@@ -24,7 +24,7 @@ export type AnyFunction = ( ...args: any[] ) => any
 export type AnyFunction1 = ( a: any ) => any
 
 // This is used as an arbitrary literal that should not match anything else.
-type Arbitrary = 'It is now 1554792354 since seconds since Jan 01, 1970'
+type Arbitrary = 'It is now 1554792354 seconds since since Jan 01, 1970'
 
 // An type to test if a type is `any` within a specific context
 type IsAny<O, T = true, F = false> = Arbitrary extends O
@@ -74,5 +74,5 @@ export type PipelineFn = <Arg, Fns extends [ (arg: Arg) => any, ...AnyFunction1[
 /**
  * An example of `Compose` used in a `compose` function
  */
-  export type ComposeFn = <Fns extends [AnyFunction, ...AnyFunction[]] >( ...fns: Fns & Compose<Fns> extends AnyFunction ? Fns : never ) =>  Compose<Fns>
+export type ComposeFn = <Fns extends [AnyFunction, ...AnyFunction[]] >( ...fns: Fns & Compose<Fns> extends AnyFunction ? Fns : never ) =>  Compose<Fns>
 
