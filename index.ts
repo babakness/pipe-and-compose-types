@@ -12,7 +12,6 @@ export type ExtractFunctionReturnValue<Fn> = Fn extends  ( ...args: any[] ) => i
 
 type BooleanSwitch<Test, T = true, F = false> = Test extends true ? T : F
 
-
 /**
  * Replacement for Function, represents any kind of function. 
  */
