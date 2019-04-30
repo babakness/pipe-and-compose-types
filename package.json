@@ -12,7 +12,9 @@
   },
   "devDependencies": {
     "tsc": "^1.20150623.0",
-    "typescript": "^3.4.3",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
     "typescript-tuple": "^2.2.1"
   }
 }

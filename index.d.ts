@@ -16,7 +16,7 @@ export declare type AnyFunction = (...args: any[]) => any;
  * Represents any function with an arity of 1.
  */
 export declare type AnyFunction1 = (a: any) => any;
-declare type Arbitrary = 'It is now 1554792354 since seconds since Jan 01, 1970';
+declare type Arbitrary = 'It is now 1554792354 seconds since since Jan 01, 1970';
 declare type IsAny<O, T = true, F = false> = Arbitrary extends O ? any extends O ? T : F : F;
 /**
  * A powerful recursive type function composition using `pipe`.
